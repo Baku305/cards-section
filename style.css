@@ -1,0 +1,40 @@
+/*Cards Section*/
+div.card{
+object-fit: contain;
+max-width: min-content;
+background-color: rgb(66, 66, 66);
+border: 5px;
+}
+div.card:hover{
+    transform: scale(1.5);
+    transition: 500ms;
+}
+div.card:hover div.hide{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: initial;
+}
+div.card-content-buttons{
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.hide{
+    display: none;
+}
+select{
+    margin: auto;
+    margin-right: 10px;
+}
+div.like-buttons{
+    display: inline-block;
+}
+div.like-buttons:hover > .hide{
+    display: inline;
+}
+div.like-buttons:hover {
+    transform: scale(1.5);
+    transition: 500ms;
+}
