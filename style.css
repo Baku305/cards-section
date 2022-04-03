@@ -1,20 +1,18 @@
 /*Cards Section*/
+
 div.cards-conteiner{
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-end;
 }
 div.card{
-object-fit: contain;
-max-width: min-content;
 background-color: rgb(66, 66, 66);
-border:  3px solid black;
 margin: auto;
 border-radius: 5px;
+max-width: min-content;
 }
 div.card-header{
   display: flex;
-  object-fit: fill;
-  padding-bottom: 0px;
-  margin-bottom:0px;
+
 }
 div.card-content{
   padding: 5px;
@@ -23,25 +21,37 @@ div.card-content-info,
 div.card-content-features{
   margin-left: 0.5em;
 }
-div.card:hover{
-    transform: scale(1.5);
-    transition: 500ms;
+img.card-image{
+  max-width: 200px;
+  border-radius: 5px;
 }
-div.card:hover div.hide{
-    display: block;
+div.card-content-buttons{
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 5px
+}
+div.margin{
+  padding: 3px;
 }
 a{
     text-decoration: none;
     color: initial;
 }
+video{
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  object-fit: fill;
+  
+}
 .button{
   padding: 5px
 }
-div.card-content-buttons{
-    display: inline-flex;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 5px
+.prw-header{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
 }
 .hide{
     display: none;
@@ -62,7 +72,7 @@ div.card-content-buttons{
   
 }
 div.like-buttons{
-    display: inline-block;
+    display: inline;
 }
 div.like-buttons:hover > .hide{
     display: inline;
@@ -71,3 +81,22 @@ div.like-buttons:hover {
     transform: scale(1.5);
     transition: 500ms;
 }
+/*card hover display*/
+div.card:hover{
+  transform: scale(1.5);
+  transition: 500ms;
+}
+div.card:hover video.hide{
+  display: block;
+
+}
+div.card:hover div.hide{
+  display: block;
+}
+div.card:hover img.card-image{
+  display: none;
+}
+div.card:hover div.card-content-info, div.card-content-features{
+  font-size: 0.6em;
+  transition: 0ms;
+} 
