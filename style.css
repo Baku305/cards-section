@@ -65,9 +65,16 @@ video{
 }
 .hide{
     display: none;
+    border: none;
 }
 #play-b{
   background-color: white;
+}
+#unlike-b{
+  transition: 500ms;
+}
+.adoro-b{
+  transition: 500ms;
 }
 .drop-b{
     margin: auto;
@@ -88,6 +95,9 @@ div.like-buttons{
     display: inline-flex;
     max-height: 30px;
 }
+div.like-buttons > .hide{
+  display: none;
+}
 
 /*card hover display*/
 div.card:hover{
@@ -98,10 +108,14 @@ div.card:hover{
 }
 div.card:hover video.hide{
   display:flex;
-
 }
+
 div.card:hover div.hide{
   display: block;
+}
+div.card:hover div.b-hide{
+  display: inline-flex;
+  position: absolute;
 }
 div.card:hover img.card-image{
   display: none;
@@ -110,19 +124,15 @@ div.card:hover div.card-content-info, div.card-content-features{
   font-size: 0.6em;
   transition: 0ms;
 } 
-div.like-buttons:hover > .hide{
-  display: inline;
+div.like-buttons:hover div.b-hide .hide{
+  display: inline-flex;
+  position: absolute;
 }
-div.like-buttons:hover {
-  transform: scale(1.1) translate(-10px);
-  transition: 500ms;
-  transform-origin: center;
-  background-color: #3d3d3d;
-  max-width: 60px;
-  max-height: min-content;
-  overflow: visible;
-  justify-content: center;
-
+div.like-buttons:hover .unlike-b{
+  transform: translate(-30px);
+}
+div.like-buttons:hover .adoro-b{
+  transform: translate(30px);
 }
 
 div.like-buttons:hover .button{
@@ -130,3 +140,14 @@ div.like-buttons:hover .button{
   border: 1px solid #3d3d3d;
   background-color: #3d3d3d;
 } 
+zdiv.like-buttons:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+  transform-origin: center;
+  background-color: #3d3d3d;
+  max-width: 60px;
+  max-height: min-content;
+  overflow: visible;
+  justify-content: center;
+}
+
