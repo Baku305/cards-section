@@ -1,5 +1,4 @@
 /*Cards Section*/
-
 div.cards-conteiner{
   display: flex;
   margin-left: 40px;
@@ -11,6 +10,9 @@ div .argument{
 a{
   text-decoration: none;
   color: initial;
+}
+div.margin{
+  padding: 3px;
 }
 div.card{
   background-color: rgb(66, 66, 66);
@@ -36,11 +38,9 @@ div.card-content-buttons{
 }
 div.card-content-info, 
 div.card-content-features{
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
-div.margin{
-  padding: 3px;
-}
+
 video{
   width: 100%;
   height: 100%;
@@ -51,7 +51,12 @@ video{
   
 }
 .button{
-  padding: 5px
+  margin-right: 3px ;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 0px;
 }
 .prw-header{
   object-fit: fill;
@@ -60,6 +65,9 @@ video{
 }
 .hide{
     display: none;
+}
+#play-b{
+  background-color: white;
 }
 .drop-b{
     margin: auto;
@@ -77,7 +85,8 @@ video{
   
 }
 div.like-buttons{
-    display: inline;
+    display: inline-flex;
+    max-height: 30px;
 }
 
 /*card hover display*/
@@ -105,6 +114,19 @@ div.like-buttons:hover > .hide{
   display: inline;
 }
 div.like-buttons:hover {
-  transform: scale(1.5);
+  transform: scale(1.1) translate(-10px);
   transition: 500ms;
+  transform-origin: center;
+  background-color: #3d3d3d;
+  max-width: 60px;
+  max-height: min-content;
+  overflow: visible;
+  justify-content: center;
+
 }
+
+div.like-buttons:hover .button{
+  margin-right: 0px;
+  border: 1px solid #3d3d3d;
+  background-color: #3d3d3d;
+} 
