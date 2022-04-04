@@ -144,14 +144,3 @@ div.like-buttons:hover .button{
   border: 1px solid #3d3d3d;
   background-color: #3d3d3d;
 } 
-zdiv.like-buttons:hover {
-  transform: scale(1.1);
-  transition: 500ms;
-  transform-origin: center;
-  background-color: #3d3d3d;
-  max-width: 60px;
-  max-height: min-content;
-  overflow: visible;
-  justify-content: center;
-}
-
