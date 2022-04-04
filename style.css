@@ -70,11 +70,15 @@ video{
 #play-b{
   background-color: white;
 }
-#unlike-b{
+.unlike-b{
   transition: 500ms;
+  border: none;
+
 }
 .adoro-b{
   transition: 500ms;
+  border: none;
+
 }
 .drop-b{
     margin: auto;
