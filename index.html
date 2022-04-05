@@ -1,818 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:image" content="https://gogomagazine.it/wp-content/uploads/2019/07/netflix-logo-e1563434160366.jpg"/>
-    <meta property="og:title" content="Netflix"/>
-    <meta property="og:description" content="Qui potete trovare la riproduzione del sito di Netflix effettuata dal Team7 del corso Fullstack di Develhope"/>
-    <meta property="og:url" content="http://riproduzionenetflix.it/esercizioteam7"/>
-    <meta property="og:type" content="website"/>
-    
-    <title>Netflix</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css"/>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:image"
+    content="https://gogomagazine.it/wp-content/uploads/2019/07/netflix-logo-e1563434160366.jpg" />
+  <meta property="og:title" content="Netflix" />
+  <meta property="og:description"
+    content="Qui potete trovare la riproduzione del sito di Netflix effettuata dal Team7 del corso Fullstack di Develhope" />
+  <meta property="og:url" content="http://riproduzionenetflix.it/esercizioteam7" />
+  <meta property="og:type" content="website" />
+
+  <title>Netflix</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
+  <header>
+    <nav>
 
-        </nav>
-    </header>
-    
-    <main>
-        <!--Hero section-->
-        <section>
+    </nav>
+  </header>
 
-        </section>
-                         <!--Cards-->
-        <section id="cards-section">
-            <!--Contenitore categoria "I titoli del momento"--> 
-            <div class="argument">
-              <h3>I titoli del momento</h3>
+  <main>
+    <!--Hero section-->
+    <section>
+
+    </section>
+    <!--Cards-->
+    <section id="cards-section">
+      <!--Contenitore categoria "I titoli del momento"-->
+      <div class="argument">
+        <h3>I titoli del momento</h3>
+      </div>
+      <!--contenitore card-->
+      <div class="cards-conteiner">
+        <!--prima card-->
+        
+          <div class="card">
+            <div class="card-header">
+              <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image" />
+              <!--video che si visualizza con hover del mouse-->
+              <video class="hide" muted autoplay loop>
+                <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4" />
+              </video>
             </div>
-            <!--contenitore card-->
-            <div class="cards-conteiner"> 
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="20" width="20" class="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="20" width="20" class="plus-b" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class=" unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="20" width="20"/>
-                          </div>
-                          <div class=" adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="20" width="20"/>
-                          </div>
-                          <div class="like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="20" width="20" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="20" height="20" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
+            <!--contenitore delle informazione inizialmente nascosto-->
+            <div class="card-content hide">
+              <!--bottoni-->
+              <div class="card-content-buttons">
+                <img src="assets/buttons-svg/play-button.svg" alt="play-button"  class="play-b" />
+                <img src="assets/buttons-svg/plus-button.svg" alt="plus-button"  class="plus-b" />
+                <!--bottoni like-->
+                <div class="like-buttons">
+                  <div class=" unlike-b b-hide">
+                    <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button"  />
+                  </div>
+                  <div class=" adoro-b b-hide">
+                    <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button"  />
+                  </div>
+                  <div class="like-b b-hide">
+                    <img src="assets/buttons-svg/like-button.svg" alt="like-button"  />
+                  </div>
+                  <!--bottone drop-->
                 </div>
+                <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" 
+                  class="drop-b button" />
               </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
+              <!--informazioni-->
+              <div class="card-content-info">
+                <h4 class="compatibility-b">99% compatibile</h4>
+                <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
               </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
+              <div class="card-content-features">
+                <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
               </div>
             </div>
-                        <!--Contenitore categoria "I titoli del momento"--> 
-                        <div class="argument">
-                          <h3>I titoli del momento</h3>
-                        </div>
-                        <!--contenitore card-->
-                        <div class="cards-conteiner"> 
-                          <!--prima card-->
-                          <div class="margin">
-                            <div class="card">
-                                <div class="card-header">
-                                  <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                                  <!--video che si visualizza con hover del mouse-->
-                                  <video class="hide" muted autoplay loop>
-                                    <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                                  </video>
-                                </div>
-                                <!--contenitore delle informazione inizialmente nascosto-->
-                                <div class="card-content hide">
-                                  <!--bottoni-->
-                                  <div class="card-content-buttons">
-                                    <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                                    <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                                    <!--bottoni like-->
-                                    <div class="like-buttons">
-                                      <div class="button unlike-b b-hide">
-                                        <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button adoro-b b-hide">
-                                        <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button like-b b-hide">
-                                        <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                                      </div>
-                                      <!--bottone drop-->                        
-                                    </div>
-                                    <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                                  </div>
-                                  <!--informazioni-->
-                                  <div class="card-content-info">
-                                    <h4 class="compatibility-b">99% compatibile</h4>
-                                    <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                                  </div>
-                                  <div class="card-content-features">
-                                    <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                          <!--prima card-->
-                          <div class="margin">
-                            <div class="card">
-                                <div class="card-header">
-                                  <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                                  <!--video che si visualizza con hover del mouse-->
-                                  <video class="hide" muted autoplay loop>
-                                    <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                                  </video>
-                                </div>
-                                <!--contenitore delle informazione inizialmente nascosto-->
-                                <div class="card-content hide">
-                                  <!--bottoni-->
-                                  <div class="card-content-buttons">
-                                    <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                                    <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                                    <!--bottoni like-->
-                                    <div class="like-buttons">
-                                      <div class="button unlike-b b-hide">
-                                        <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button adoro-b b-hide">
-                                        <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button like-b b-hide">
-                                        <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                                      </div>
-                                      <!--bottone drop-->                        
-                                    </div>
-                                    <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                                  </div>
-                                  <!--informazioni-->
-                                  <div class="card-content-info">
-                                    <h4 class="compatibility-b">99% compatibile</h4>
-                                    <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                                  </div>
-                                  <div class="card-content-features">
-                                    <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                          <!--prima card-->
-                          <div class="margin">
-                            <div class="card">
-                                <div class="card-header">
-                                  <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                                  <!--video che si visualizza con hover del mouse-->
-                                  <video class="hide" muted autoplay loop>
-                                    <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                                  </video>
-                                </div>
-                                <!--contenitore delle informazione inizialmente nascosto-->
-                                <div class="card-content hide">
-                                  <!--bottoni-->
-                                  <div class="card-content-buttons">
-                                    <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                                    <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                                    <!--bottoni like-->
-                                    <div class="like-buttons">
-                                      <div class="button unlike-b b-hide">
-                                        <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button adoro-b b-hide">
-                                        <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button like-b b-hide">
-                                        <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                                      </div>
-                                      <!--bottone drop-->                        
-                                    </div>
-                                    <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                                  </div>
-                                  <!--informazioni-->
-                                  <div class="card-content-info">
-                                    <h4 class="compatibility-b">99% compatibile</h4>
-                                    <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                                  </div>
-                                  <div class="card-content-features">
-                                    <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                          <!--prima card-->
-                          <div class="margin">
-                            <div class="card">
-                                <div class="card-header">
-                                  <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                                  <!--video che si visualizza con hover del mouse-->
-                                  <video class="hide" muted autoplay loop>
-                                    <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                                  </video>
-                                </div>
-                                <!--contenitore delle informazione inizialmente nascosto-->
-                                <div class="card-content hide">
-                                  <!--bottoni-->
-                                  <div class="card-content-buttons">
-                                    <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                                    <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                                    <!--bottoni like-->
-                                    <div class="like-buttons">
-                                      <div class="button unlike-b b-hide">
-                                        <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button adoro-b b-hide">
-                                        <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button like-b b-hide">
-                                        <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                                      </div>
-                                      <!--bottone drop-->                        
-                                    </div>
-                                    <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                                  </div>
-                                  <!--informazioni-->
-                                  <div class="card-content-info">
-                                    <h4 class="compatibility-b">99% compatibile</h4>
-                                    <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                                  </div>
-                                  <div class="card-content-features">
-                                    <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                          <!--prima card-->
-                          <div class="margin">
-                            <div class="card">
-                                <div class="card-header">
-                                  <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                                  <!--video che si visualizza con hover del mouse-->
-                                  <video class="hide" muted autoplay loop>
-                                    <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                                  </video>
-                                </div>
-                                <!--contenitore delle informazione inizialmente nascosto-->
-                                <div class="card-content hide">
-                                  <!--bottoni-->
-                                  <div class="card-content-buttons">
-                                    <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                                    <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                                    <!--bottoni like-->
-                                    <div class="like-buttons">
-                                      <div class="button unlike-b b-hide">
-                                        <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button adoro-b b-hide">
-                                        <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button like-b b-hide">
-                                        <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                                      </div>
-                                      <!--bottone drop-->                        
-                                    </div>
-                                    <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                                  </div>
-                                  <!--informazioni-->
-                                  <div class="card-content-info">
-                                    <h4 class="compatibility-b">99% compatibile</h4>
-                                    <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                                  </div>
-                                  <div class="card-content-features">
-                                    <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                          <!--prima card-->
-                          <div class="margin">
-                            <div class="card">
-                                <div class="card-header">
-                                  <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                                  <!--video che si visualizza con hover del mouse-->
-                                  <video class="hide" muted autoplay loop>
-                                    <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                                  </video>
-                                </div>
-                                <!--contenitore delle informazione inizialmente nascosto-->
-                                <div class="card-content hide">
-                                  <!--bottoni-->
-                                  <div class="card-content-buttons">
-                                    <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                                    <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                                    <!--bottoni like-->
-                                    <div class="like-buttons">
-                                      <div class="button unlike-b b-hide">
-                                        <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button adoro-b b-hide">
-                                        <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                                      </div>
-                                      <div class="button like-b b-hide">
-                                        <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                                      </div>
-                                      <!--bottone drop-->                        
-                                    </div>
-                                    <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                                  </div>
-                                  <!--informazioni-->
-                                  <div class="card-content-info">
-                                    <h4 class="compatibility-b">99% compatibile</h4>
-                                    <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                                  </div>
-                                  <div class="card-content-features">
-                                    <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                                    <!--Contenitore categoria "I titoli del momento"--> 
-            <div class="argument">
-              <h3>I titoli del momento</h3>
-            </div>
-            <!--contenitore card-->
-            <div class="cards-conteiner"> 
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!--prima card-->
-              <div class="margin">
-                <div class="card">
-                    <div class="card-header">
-                      <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image"/>
-                      <!--video che si visualizza con hover del mouse-->
-                      <video class="hide" muted autoplay loop>
-                        <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4"/>
-                      </video>
-                    </div>
-                    <!--contenitore delle informazione inizialmente nascosto-->
-                    <div class="card-content hide">
-                      <!--bottoni-->
-                      <div class="card-content-buttons">
-                        <img src="assets/buttons-svg/play-button.svg" alt="play-button" height="30" width="30" class="button" id="play-b"/>
-                        <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" height="30" width="30" class="button" />
-                        <!--bottoni like-->
-                        <div class="like-buttons">
-                          <div class="button unlike-b b-hide">
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="dislike-button" height="30" width="30"/>
-                          </div>
-                          <div class="button adoro-b b-hide">
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-button" height="30" width="30"/>
-                          </div>
-                          <div class="button like-b b-hide">
-                            <img src="assets/buttons-svg/like-button.svg" alt="like-button" height="30" width="30" />
-                          </div>
-                          <!--bottone drop-->                        
-                        </div>
-                        <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" width="30" height="30" class="drop-b button" />
-                      </div>
-                      <!--informazioni-->
-                      <div class="card-content-info">
-                        <h4 class="compatibility-b">99% compatibile</h4>
-                        <p><span class="pegi-b">VM14</span> 2 stagioni <span class="quality-b">HD</span></p>
-                      </div>
-                      <div class="card-content-features">
-                        <p><span>Travolgente</span> • <span>Spiritoso</span> • <span>Emozionante</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            
-        </section>
-    </main>
+          </div>
+        
+      </div>
 
-    <footer>
+    </section>
+  </main>
 
-    </footer>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
