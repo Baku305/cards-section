@@ -1,4 +1,8 @@
 /*Cards Section*/
+:root{
+  --card-back-color: #181818;
+}
+
 .cards-conteiner{
   display: flex;
   margin-left: 40px;
@@ -32,11 +36,22 @@ img.card-image{
 .card-content-info, 
 .card-content-features{
   margin-left: 0.5rem;
+  font-family: 'poppins',sans-serif;
 }
 .card-content-features{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.card-content-info{
+  padding-bottom: 0.3rem;
+}
+
+div.card-content-info,
+div.card-content-features span, p{
+  color: white;
+  text-shadow: 0.2px 0px 1px white;
+}
+
 video{
   width: 100%;
   height: 100%;
@@ -46,7 +61,6 @@ video{
   border-top-right-radius: 5px;
   border-bottom-left-radius: none;
   border-bottom-right-radius: none;
-  
 }
 
 .prw-header{
@@ -57,7 +71,7 @@ video{
 .hide{
     display: none;
     border: none;
-    background-color: #181818;
+    background-color: var(--card-back-color);
 }
 div.like-buttons{
   transition: 500ms;
@@ -67,6 +81,7 @@ div.like-buttons{
 .button{
   height: 30px;
   width: 30px;
+  box-shadow: 1px 1px 2px #3d3d3d;
 }
 .play-b{
   background-color: white;
@@ -74,6 +89,7 @@ div.like-buttons{
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  overflow: hidden;
 }
 .plus-b{
   border: 1px solid white;
@@ -81,14 +97,16 @@ div.like-buttons{
   margin-left: 3px;
   width: 30px;
   height: 30px;
+  background-color: #3d3d3d
 }
 .like-b{
   border: 1px solid white;
   border-radius: 50%;
   margin-left: 3px;
-  background-color: #181818;
   width: 30px;
   height: 30px;
+  transition: 500ms;
+  background-color:#3d3d3d;
 }
 .unlike-b{
   transition: 500ms;
@@ -109,12 +127,20 @@ div.like-buttons{
 }
 .pegi-b,
 .quality-b{
-  border: 1px solid black
+  border: 1px solid;
+  padding: 0.3rem;
+}
+.pegi-b{
+  margin-right: 0.3rem;
+}
+.quality-b{
+  margin-left: 0.3rem;
 }
 .compatibility-b{
   color: green;
-  padding-top: 0px;
+  padding-top: 0.8rem;
   margin-top: 0px;
+  text-shadow: none;
 }
 
 /*card hover display*/
@@ -136,35 +162,42 @@ div.like-buttons{
   position: absolute;
 }
 .like-buttons:hover {
-  transform: scale(1.2)
+  transform: scale(1.2);
+  margin-top:0.1rem;
 }
 .card:hover img.card-image{
   display: none;
 }
 .card:hover .card-content-info, .card-content-features{
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   transition: 0ms;
 }
+.card:hover .unlike-b{
+  margin-left: 0.4rem;
+}
+.card:hover .adoro-b{
+  margin-left: 0.4rem
+}
 .like-buttons:hover .unlike-b{
-  transform: translate(-22px);
+  transform: translate(-32px);
 }
 .like-buttons:hover .adoro-b{
-  transform: translate(29px);
+  transform: translate(25px);
 }
 
 .like-buttons:hover .like-b{
-  border: 1px solid #181818;
+  border: none;
   border-radius: 0px;
+  background: #3d3d3d;
+  box-shadow: none;
 } 
 .like-buttons:hover .unlike-b{
-  border: 1px solid #181818;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
-  background-color: #181818;
+  background-color: #3d3d3d;
 }
 .like-buttons:hover .adoro-b{
-  border: 1px solid #181818;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  background-color: #181818;
+  background-color: #3d3d3d;
 }
