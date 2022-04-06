@@ -160,6 +160,17 @@ div.like-buttons{
     
 }
 
+.tooltip{
+  position: absolute;
+  visibility: hidden;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  z-index: 1;
+  padding: 5px 0;
+  text-align: center;
+  margin: 5px;
+}
+
 /*informazioni*/
 
 .pegi-i,
@@ -205,7 +216,12 @@ div span.decoration-f{
   display: none;
 }
 
-/*like buttons hover*/
+/*buttons hover*/
+
+.play-b:hover ~ .tooltip{
+  visibility: visible;
+}
+
 .button:hover{
   background-color: #3d3d3d;
 }
@@ -216,7 +232,7 @@ div span.decoration-f{
 }
 
 .like-buttons:hover .adoro-b{
-  transform: translate(45px);
+  transform: translate(40px);
   border: 3px solid #2a2a2a;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -225,7 +241,7 @@ div span.decoration-f{
 }
 
 .like-buttons:hover .unlike-b{
-  transform: translate(-45px);
+  transform: translate(-40px);
   border: 3px solid #2a2a2a;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
