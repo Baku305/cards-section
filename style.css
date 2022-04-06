@@ -10,16 +10,18 @@ html{
 .cards-conteiner{
   display: flex;
   margin-left: 40px;
+  max-height: 180px;
 }
 
 .card{
   border-radius: 5px;
-  display:inline-block;
-  position: relative;
+  display:flex;
+  flex-direction: column;
   box-sizing: border-box;
   transition: 800ms;
   transform-origin: right;
-  min-width: 30rem;
+  min-width: 32rem;
+  margin: 0.2rem;
 }
 .card-header{
   width: 100%;
@@ -34,6 +36,7 @@ img.card-image{
 
 .card-content{
   padding: 15px;
+  padding-top: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #181818;
@@ -43,14 +46,14 @@ img.card-image{
   display: inline-flex;
   justify-content: flex-start;
   width: 100%;
-  padding-top: 0.8em;
+  padding-top: 0.6em;
 }
 
 .card-content-info, 
 .card-content-features{
   margin-left: 0.2em;
   font-family: 'poppins',sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .card-content-features{
@@ -100,8 +103,8 @@ div.like-buttons{
 }
 
 .button{
-  height: 4rem;
-  width: 4rem;
+  height: 3.5rem;
+  width: 3.5rem;
   box-shadow: 1px 1px 2px #2a2a2a;
 }
 
@@ -136,15 +139,15 @@ div.like-buttons{
 
 .unlike-b{
   transition: 250ms;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   box-shadow: none;
 }
 
 .adoro-b{
   transition: 250ms;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   box-shadow: none;
 }
 
@@ -153,6 +156,7 @@ div.like-buttons{
     margin-right: 0.1em;
     border: 1px solid rgba(245, 245, 245, 0.500);
     border-radius: 50%;
+    background-color: #2a2a2a;
     
 }
 
@@ -193,24 +197,12 @@ div span.decoration-f{
   transform: scale(1.2);
 }
 
-.card:hover video.hide{
-  display:flex;
-}
-
 .card:hover .hide{
   display: block;
 }
 
 .card:hover img.card-image{
   display: none;
-}
-
-.card:hover .unlike-b{
-  margin-left: 5px;
-}
-
-.card:hover .adoro-b{
-  margin-left: 5px;
 }
 
 /*like buttons hover*/
