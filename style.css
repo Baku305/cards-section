@@ -1,4 +1,8 @@
 /*Cards Section*/
+
+html{
+  font-size: 10px;
+}
 :root{
   --card-back-color: #181818;
 }
@@ -6,44 +10,49 @@
 .cards-conteiner{
   display: flex;
   margin-left: 40px;
-  height: 120px;
 }
 
 .card{
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  max-width: 70%;
+  display:inline-block;
+  position: relative;
+  box-sizing: border-box;
   transition: 800ms;
   transform-origin: right;
+  min-width: 30rem;
 }
-
 .card-header{
-  display: flex;
+  width: 100%;
 }
 img.card-image{
-  max-width: 300px;
   border-radius: 5px;
   margin: 0px;
   padding: 0px;
-  max-width: 50%;
+  width: 100%;
+  height: 100%;
 }
+
 .card-content{
-  padding: 5px;
+  padding: 15px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  background-color: #181818;
 }
+
 .card-content-buttons{
   display: inline-flex;
   justify-content: flex-start;
   width: 100%;
-  margin-top: 0.3em;
+  padding-top: 0.8em;
 }
+
 .card-content-info, 
 .card-content-features{
   margin-left: 0.2em;
   font-family: 'poppins',sans-serif;
+  font-size: 1.8rem;
 }
+
 .card-content-features{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -52,6 +61,7 @@ img.card-image{
   margin-bottom: -0.2em;
 
 }
+
 .card-content-info{
   padding-bottom: 0.1em;
   margin-bottom: 0.1em;
@@ -61,19 +71,19 @@ div.card-content-info,
 div.card-content-features span, p{
   color: white;
   text-shadow: 0.2px 0px 1px white;
-  font-size: 0.7em;
   transition: 0ms;
 }
 
 video{
   width: 100%;
   height: 100%;
-  max-width: 12em;
   object-fit: fill;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: none;
   border-bottom-right-radius: none;
+  min-width: 30rem;
+  max-width: 40rem;
 }
 
 .hide{
@@ -81,15 +91,23 @@ video{
     border: none;
     background-color: var(--card-back-color);
 }
+
+/*bottoni*/
+
 div.like-buttons{
   transition: 350ms;
   transform-origin: center;
 }
 
 .button{
-  height: 1.2em;
-  width: 1.2em;
+  height: 4rem;
+  width: 4rem;
   box-shadow: 1px 1px 2px #2a2a2a;
+}
+
+.b-hide{
+  display: inline-block;
+  position: absolute;
 }
 
 .play-b{
@@ -99,30 +117,37 @@ div.like-buttons{
   overflow: hidden;
   margin-left: 0.3em;
 }
+
 .plus-b{
   border: 1px solid rgba(245, 245, 245, 0.500);
   border-radius: 50%;
-  margin-left: 0.2em;
+  margin-left: 0.6em;
   background-color: #2a2a2a
 }
+
 .like-b{
   border: 1px solid rgba(245, 245, 245, 0.500);
   border-radius: 50%;
-  margin-left: 0.2em;
+  margin-left: 0.6em;
   transition: 800ms;
   background-color:#2a2a2a;
-  transition-property: border-radius ;
+  transition-property: border-radius;
 }
+
 .unlike-b{
   transition: 250ms;
-  width: 1.2em;
-  height: 1.2em;
+  width: 4rem;
+  height: 4rem;
+  box-shadow: none;
 }
+
 .adoro-b{
   transition: 250ms;
-  width: 1.2em;
-  height: 1.2em;
+  width: 4rem;
+  height: 4rem;
+  box-shadow: none;
 }
+
 .drop-b{
     margin: auto;
     margin-right: 0.1em;
@@ -131,6 +156,8 @@ div.like-buttons{
     
 }
 
+/*informazioni*/
+
 .pegi-i,
 .quality-i{
   display: inline-flex;
@@ -138,18 +165,22 @@ div.like-buttons{
   padding: 0em 0.3em;
   justify-content: center;
 }
+
 .pegi-i{
   margin-right: 0.5em;
 }
+
 .quality-i{
   margin-left: 0.5em;
 }
+
 .compatibility-i{
   color: #46d369;
   padding-top: 0.8em;
   margin-top: 0px;
   text-shadow: 0.2px 0px 1px #46d369;
 }
+
 div span.decoration-f{
   display: inline-flex;
   color: #3d3d3d;
@@ -157,20 +188,17 @@ div span.decoration-f{
 }
 
 /*card hover display*/
+
 .card:hover{
   transform: scale(1.2);
 }
+
 .card:hover video.hide{
   display:flex;
 }
 
 .card:hover .hide{
   display: block;
-}
-.card:hover .b-hide{
-  display: inline-flex;
-  position: absolute;
-
 }
 
 .card:hover img.card-image{
@@ -180,29 +208,36 @@ div span.decoration-f{
 .card:hover .unlike-b{
   margin-left: 5px;
 }
+
 .card:hover .adoro-b{
   margin-left: 5px;
 }
+
+/*like buttons hover*/
+
 .like-buttons:hover .b-hide{
   margin-top: -0.2em;
   margin-left: -0.1em;
 }
+
 .like-buttons:hover .adoro-b{
-  transform: translate(25px);
+  transform: translate(35px);
   border: 3px solid #2a2a2a;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   background-color: #2a2a2a;
   padding: 0.1em;
 }
+
 .like-buttons:hover .unlike-b{
-  transform: translate(-30px);
+  transform: translate(-35px);
   border: 3px solid #2a2a2a;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
   background-color: #2a2a2a;
   padding:0.1em;
 }
+
 .like-buttons:hover .like-b{
   border: 3px solid #2a2a2a;
   border-radius: 0px;
