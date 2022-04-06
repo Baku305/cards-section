@@ -129,7 +129,7 @@ div.like-buttons{
   border: 1px solid rgba(245, 245, 245, 0.500);
   border-radius: 50%;
   margin-left: 0.6em;
-  transition: 800ms;
+  transition: 250ms;
   background-color:#2a2a2a;
   transition-property: border-radius;
 }
@@ -214,6 +214,9 @@ div span.decoration-f{
 }
 
 /*like buttons hover*/
+.button:hover{
+  background-color: #3d3d3d;
+}
 
 .like-buttons:hover .b-hide{
   margin-top: -0.2em;
@@ -221,7 +224,7 @@ div span.decoration-f{
 }
 
 .like-buttons:hover .adoro-b{
-  transform: translate(35px);
+  transform: translate(45px);
   border: 3px solid #2a2a2a;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -230,7 +233,7 @@ div span.decoration-f{
 }
 
 .like-buttons:hover .unlike-b{
-  transform: translate(-35px);
+  transform: translate(-45px);
   border: 3px solid #2a2a2a;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
@@ -245,3 +248,8 @@ div span.decoration-f{
   box-shadow: none;
   padding: 0.1em;
 } 
+
+.img-b:hover{
+  background-color: #3d3d3d;
+  border-radius: 50%;
+}
