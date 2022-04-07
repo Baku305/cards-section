@@ -160,6 +160,21 @@ div.like-buttons{
     
 }
 
+.unlike-img{
+border-radius: 50%;
+background-color: none;
+}
+
+.like-img{
+  border-radius: 50%;
+  background-color: none;
+}
+
+.adoro-img{
+  border-radius: 50%;
+  background-color: none;
+}
+
 /*informazioni*/
 
 .pegi-i,
@@ -205,11 +220,16 @@ div span.decoration-f{
   display: none;
 }
 
+.button:hover{
+  background-color: #3d3d3d;
+}
+
+
 /*like buttons hover*/
 
 .like-buttons:hover .b-hide{
-  margin-top: -0.2em;
-  margin-left: -0.1em;
+  margin-top: -0.25em;
+  margin-left: 0em;
 }
 
 .like-buttons:hover .adoro-b{
@@ -236,4 +256,19 @@ div span.decoration-f{
   background: #2a2a2a;
   box-shadow: none;
   padding: 0.1em;
-} 
+}
+
+.libe-b .like-img:hover{
+  background-color:#32a89e;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.unlike-img:hover{
+  background-color: #3d3d3d;
+}
+
+.adoro-img:hover{
+  background-color: #3d3d3d;
+}
