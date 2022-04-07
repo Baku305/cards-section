@@ -1,10 +1,16 @@
 /*Cards Section*/
 
 html{
+  font-family: 'Poppins', sans-serif;
   font-size: 10px;
 }
 :root{
   --card-back-color: #181818;
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,400&display=swap);
 }
 
 .cards-conteiner{
@@ -52,7 +58,6 @@ img.card-image{
 .card-content-info, 
 .card-content-features{
   margin-left: 0.2em;
-  font-family: 'poppins',sans-serif;
   font-size: 1.4rem;
 }
 
@@ -132,7 +137,7 @@ div.like-buttons{
   border: 1px solid rgba(245, 245, 245, 0.500);
   border-radius: 50%;
   margin-left: 0.6em;
-  transition: 800ms;
+  transition: 250ms;
   background-color:#2a2a2a;
   transition-property: border-radius;
 }
@@ -151,13 +156,19 @@ div.like-buttons{
   box-shadow: none;
 }
 
-.drop-b{
-    margin: auto;
-    margin-right: 0.1em;
-    border: 1px solid rgba(245, 245, 245, 0.500);
-    border-radius: 50%;
-    background-color: #2a2a2a;
+.drop-b {
+  display: block;
+  border: 1px solid rgba(245, 245, 245, 0.500);
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  margin-right: 5px;
     
+}
+
+.card-content-buttons .drop-container{
+margin: auto;
+position: relative;
+margin-right: 5px;
 }
 
 .unlike-img{
@@ -173,6 +184,63 @@ background-color: none;
 .adoro-img{
   border-radius: 50%;
   background-color: none;
+}
+
+/* tooltip*/
+
+.tooltip-container{
+  border: none;
+  display: flex;
+  max-width: max-content;
+}
+.tooltip-container .tooltip{
+  position: absolute;
+  visibility: hidden;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  z-index: 1;
+  padding: 5px 0;
+  text-align: center;
+  margin: 5px;
+  bottom: 1px;
+  font-size: 2rem;
+}
+
+.drop-container .tooltip{
+  bottom: 5.8rem;
+  left: -2rem;
+}
+
+.play-container .tooltip{
+  left: -0.75rem;
+}
+
+.plus-container .tooltip{
+  left: 3.5rem;
+}
+
+.unlike-container .tooltip{
+  left: 1.75rem;
+}
+
+.like-container .tooltip{
+  left: 7.7rem;
+}
+
+.adoro-container .tooltip{
+  left: 12.7rem;
+}
+
+.tooltip-container .tooltip::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: whitesmoke transparent transparent transparent;
+
 }
 
 /*informazioni*/
@@ -220,12 +288,21 @@ div span.decoration-f{
   display: none;
 }
 
+
+/*buttons hover*/
+
 .button:hover{
   background-color: #3d3d3d;
 }
 
+.button:hover + span.tooltip{
+  visibility: visible;
+}
 
-/*like buttons hover*/
+.b-hide:hover + span.tooltip{
+  visibility: visible;
+}
+
 
 .like-buttons:hover .b-hide{
   margin-top: -0.25em;
@@ -233,7 +310,7 @@ div span.decoration-f{
 }
 
 .like-buttons:hover .adoro-b{
-  transform: translate(35px);
+  transform: translate(40px);
   border: 3px solid #2a2a2a;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -242,7 +319,7 @@ div span.decoration-f{
 }
 
 .like-buttons:hover .unlike-b{
-  transform: translate(-35px);
+  transform: translate(-40px);
   border: 3px solid #2a2a2a;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
@@ -272,3 +349,9 @@ div span.decoration-f{
 .adoro-img:hover{
   background-color: #3d3d3d;
 }
+
+.img-b:hover{
+  background-color: #3d3d3d;
+  border-radius: 50%;
+}
+

@@ -44,6 +44,7 @@
       <div class="cards-conteiner">
         <!--prima card-->
         <div class="card">
+          <!--contenitore dell'immagine/video-->
           <div class="card-header">
             <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-image" />
             <!--video che si visualizza con hover del mouse-->
@@ -51,27 +52,62 @@
               <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4" />
             </video>
           </div>
-          <!--contenitore delle informazione inizialmente nascosto-->
-          <div class="card-content hide">
-            <!--bottoni-->
+          <!--contenitore delle informazioni inizialmente nascosto-->
+          <div class="card-content xhide">
+
+            <!--contenitore bottoni-->
             <div class="card-content-buttons">
-              <img src="assets/buttons-svg/play-button.svg" alt="play-button" class="play-b button" />
-              <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" class="plus-b button" />
-              <!--bottoni like-->
-              <div class="like-buttons">
-                <div class="unlike-b b-hide button">
-                  <img src="assets/buttons-svg/dislike-button.svg" alt="img-b" />
+
+              <!--bottone play-b tooltip-->
+              <div class="tooltip-container play-container">
+                <div class="play-b button">
+                  <img src="assets/buttons-svg/play-button.svg" alt="play-button" class="img-b" />
                 </div>
-                <div class="adoro-b b-hide button">
-                  <img src="assets/buttons-svg/adoro-button.svg" alt="img-b" />
-                </div>
-                <div class="like-b b-hide button">
-                  <img src="assets/buttons-svg/like-button.svg" alt="img-b" />
-                </div>
-                <!--bottone drop-->
+                <span class="tooltip">consiglio</span>
               </div>
-              <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" class="drop-b button" />
+
+              <!--bottone plus-b e tooltip-->
+              <div class="tooltip-container plus-container">
+                <div  class="plus-b button">
+                  <img src="assets/buttons-svg/plus-button.svg" alt="plus-button" class="img-b" />
+                </div>
+                <span class="tooltip">Aggiungi alla mia lita</span>
+              </div>
+              <!--contenitore bottoni like-->
+              <div class="like-buttons">
+                <!--bottono unlike e tooltip-->
+                <div class="tooltip-container unlike-container">
+                  <div class="unlike-b b-hide button">
+                    <img src="assets/buttons-svg/dislike-button.svg" alt="img-b" class="img-b" />
+                  </div>
+                  <span class="tooltip">non mi piace</span>
+                </div>
+                <!--bottone adoro e tooltip-->
+                <div class="tooltip-container adoro-container">
+                  <div class="adoro-b b-hide button">
+                    <img src="assets/buttons-svg/adoro-button.svg" alt="img-b" class="img-b" />
+                  </div>
+                  <span class="tooltip">adoro</span>
+                </div>              
+                <!--bottone like e tooltip-->
+                <div class="tooltip-container  like-container">
+                  <div class="like-b b-hide button">
+                    <img src="assets/buttons-svg/like-button.svg" alt="img-b" class="img-b" />
+                  </div>
+                  <span class="tooltip">mi piace</span>
+                </div>
+              </div>
+
+              <!--bottone drop-->
+              <div class="tooltip-container drop-container">
+                <div class="drop-b button">
+                  <img src="assets/buttons-svg/drop-button.svg" alt="drop-b" class="img-b"/>
+                </div>                
+                <span class="tooltip drop-tooltip">episodi</span>
+              </div>
+            
             </div>
+
             <!--informazioni-->
             <div class="card-content-info">
               <p>
@@ -330,7 +366,7 @@
         <h3>I titoli del momento</h3>
       </div>
       <!--contenitore card-->
-      <div class="cards-conteiner">
+      <div class="cards-conteiner hide">
         <!--prima card-->
         <div class="card">
           <div class="card-header">
@@ -585,13 +621,13 @@
               <div class="like-buttons">
                 <div class="unlike-b b-hide button">
                   <div class="unlike-img">
-                    <img src="assets/buttons-svg/dislike-button.svg" alt="unlike-img"  />
-                  </div> 
+                    <img src="assets/buttons-svg/dislike-button.svg" alt="unlike-img" />
+                  </div>
                 </div>
                 <div class="adoro-b b-hide button">
-                  <div class="adoro-img" >
+                  <div class="adoro-img">
                     <img src="assets/buttons-svg/adoro-button.svg" alt="adoro-img" />
-                  </div> 
+                  </div>
                 </div>
                 <div class="like-b b-hide button">
                   <div class="like-img">
